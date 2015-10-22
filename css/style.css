@@ -5,7 +5,8 @@ body {
 
 .card-header {
 	height: 280px;
-	background-color: blue;
+	background-image: url(../images/background.jpg);
+	background-size: cover;
 	padding-top: 50px;
 }
 
@@ -23,7 +24,7 @@ body {
 }
 
 .card-bio {
-	height: 300px;
+	height: 800px;
 	background-color: grey;
 
 }

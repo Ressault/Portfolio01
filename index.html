@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
     <link href="css/roboto.min.css" rel="stylesheet">
-        <link href="css/material.min.css" rel="stylesheet">
+        <link href="css/material.css" rel="stylesheet">
         <link href="css/ripples.min.css" rel="stylesheet">
      <!-- Un seul appel feuille de style, les autres appels sont dans home css grace a balise "@import : url()" -->
     <link rel="stylesheet" href="css/style.css">
@@ -38,10 +38,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">    
-        <li><a href="#">Accueil</a></li>     
+        <li><a href="#HEADER">Accueil</a></li>     
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Qui suis-je ?</a></li>
+        <li><a href="#BIO">Qui suis-je ?</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Services</a></li>
@@ -93,7 +93,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center position">
-                <a href="#" class="btn btn-fab btn-raised btn-material-green">
+                <a href="#BIO" class="btn btn-fab btn-raised btn-material-green">
                 <i class="mdi-navigation-expand-more"></i>            
                 </a>
             </div>
@@ -122,6 +122,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="js/ripples.min.js"></script>
+    <script type="text/javascript">  
+      $('a[href^="#"]').click(function(){
+      var the_id = $(this).attr("href");
+      $('html, body').animate({
+          scrollTop:$(the_id).offset().top
+      }, 'slow');
+      return false;
+      });    
+    </script> 
+
         <script src="js/material.min.js"></script>
         <script>
             $(document).ready(function() {
