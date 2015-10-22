@@ -18,10 +18,8 @@ body {
 	padding-top: 135px;
 }
 
-
-
 #bio p {
-	margin-bottom: 0px !important;
+	margin-bottom: 20px !important;
 }
 
 .card-bio {
@@ -32,6 +30,12 @@ body {
 
 .navbar-fixed-top .navbar-collapse {
   max-height: 100%;}
+
+.position  {
+	margin-top: -50px;
+}
+
+
 
 
 .vertical-space-100 {
