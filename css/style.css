@@ -1,0 +1,18 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: red;
+}
+
+.card-header {
+	height: 280px;
+	background-color: blue;
+	padding-top: 50px;
+}
+
+.logo {
+	margin-top: -5px;
+}
+
+.profil {
+	padding-top: 150px;
+}
