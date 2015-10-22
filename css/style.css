@@ -17,3 +17,28 @@ body {
 #profiler {
 	padding-top: 135px;
 }
+
+
+
+#bio p {
+	margin-bottom: 0px !important;
+}
+
+.card-bio {
+	height: 300px;
+	background-color: grey;
+
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 100%;}
+
+
+.vertical-space-100 {
+	height: 100px;
+}
+
+.vertical-space-50 {
+	height: 50px;
+}
+
