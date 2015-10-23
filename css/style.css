@@ -108,7 +108,7 @@ if it's not present, don't show loader */
 	
 	margin-top: -51px;
 	padding-left: 73px;
-	color: #616161;
+	
 }
 
 
@@ -147,7 +147,7 @@ if it's not present, don't show loader */
 
 .img-competence h1 {
 	color: white;
-	padding-top: 20px;
+	padding-top: 16px;
 }
 
 .img-competence p {
@@ -155,3 +155,24 @@ if it's not present, don't show loader */
 	margin-top: -10px;
 	
 }
+
+.card-competence {
+	height: 450px;
+	background-color: white;
+	border-radius: 2px;
+	padding: 10px;
+
+}
+
+#CARD-COMPETENCE-3D {
+	margin-top: -45px;
+}
+
+.card-competence h2  {
+	
+	margin-top: -51px;
+	padding-left: 73px;
+	
+}
+
+h2 {color: #9E9E9E;}
