@@ -24,8 +24,8 @@ body {
 }
 
 .card-bio {
-	height: 800px;
-	background-color: grey;
+	height: 500px;
+	background-color: #EEEEF0;
 
 }
 
@@ -37,7 +37,30 @@ body {
 }
 
 
+.img-circle {
+	border-radius: 50%;
+	border: 13px solid red;
 
+}
+
+.img-circle-none {
+	border-radius: 50%;
+}
+
+.card {
+	height: 150px;
+	background-color: white;
+	border: 1px solid #BDBDBD;
+
+}
+
+#presentation {
+	padding: 10px;
+}
+
+.margin-top {
+	margin-top: 15px;
+}
 
 .vertical-space-100 {
 	height: 100px;
@@ -47,11 +70,16 @@ body {
 	height: 50px;
 }
 
-
-.img-circle {
-	
-	border: 13px solid red;
-
+.padded {
+	padding-left: -10px;
 }
 
+h3  {
+	
+	margin-top: -52px;
+	padding-left: 100px;
+}
 
+h3 {
+	font-size: 25px !important;
+}
