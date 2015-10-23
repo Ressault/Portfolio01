@@ -167,8 +167,6 @@ if it's not present, don't show loader */
 
 }
 
-
-
 .card-competence h2  {
 	
 	margin-top: -51px;
@@ -177,3 +175,11 @@ if it's not present, don't show loader */
 }
 
 h2 {color: #9E9E9E;}
+
+
+
+.shadow-z-2-hover {
+  box-shadow:
+    0 8px 14px 0 rgba(0, 0, 0, 0.2),
+    0 6px 17px 0 rgba(0, 0, 0, 0.19);
+}
