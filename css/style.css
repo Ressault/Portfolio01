@@ -1,7 +1,29 @@
+
+
+
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: red;
 }
+
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader.gif) center no-repeat #ededee;
+}
+
+
 
 .card-header {
 	height: 280px;
@@ -24,7 +46,7 @@ body {
 }
 
 .background-bio {
-	height: 680px;
+	padding-bottom: 45px;
 	background-color: #EEEEF0;
 
 }
@@ -48,7 +70,6 @@ body {
 }
 
 .card {
-	height: 150px;
 	background-color: white;
 	
 
@@ -74,7 +95,7 @@ body {
 }
 
 .padded-line {
-	margin-top: 7px;
+	margin-top: 26px;
 }
 
 .padded {
@@ -88,21 +109,19 @@ h3  {
 }
 
 h3 {
-	font-size: 25px !important;
+	font-size: 6vw !important;
 }
 
 .intro-text {
-	font-size: 18px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-top: -15px;
+	font-size: 5vw;
+	padding-left: 4px;
+	padding-right: 3px;
 	word-spacing: -1px;
 	letter-spacing: -0.1pt;
+	padding-bottom: 30px;
 }
 
-.height-card {
-	height: 600px;
-}
+
 
 
 .position-more {
@@ -114,6 +133,12 @@ h3 {
 	height: 150px; 
 	background-image: url(../images/background.jpg);
 	background-size: cover;
-	margin-top: -7px;
-	margin-bottom: 10px;
+	margin-top: -13px;
+	margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 300px) {
+
+   p { font-size: 1px; }
+
 }
