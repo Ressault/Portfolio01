@@ -118,7 +118,7 @@ h3 {
 	padding-right: 3px;
 	word-spacing: -1px;
 	letter-spacing: -0.1pt;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 
 
@@ -134,7 +134,7 @@ h3 {
 	background-image: url(../images/background.jpg);
 	background-size: cover;
 	margin-top: -13px;
-	margin-bottom: 5px;
+	margin-bottom: 7px;
 }
 
 @media only screen and (max-width: 300px) {
