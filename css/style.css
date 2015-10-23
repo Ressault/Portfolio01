@@ -50,12 +50,15 @@ body {
 .card {
 	height: 150px;
 	background-color: white;
-	border: 1px solid #BDBDBD;
+	
 
 }
 
 #presentation {
 	padding: 10px;
+	padding-bottom: -50px;
+
+
 }
 
 .margin-top {
@@ -70,16 +73,38 @@ body {
 	height: 50px;
 }
 
+.padded-line {
+	margin-top: 7px;
+}
+
 .padded {
 	padding-left: -10px;
 }
 
 h3  {
 	
-	margin-top: -52px;
-	padding-left: 100px;
+	margin-top: -46px;
+	padding-left: 75px;
 }
 
 h3 {
 	font-size: 25px !important;
+}
+
+.intro-text {
+	font-size: 18px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: -15px;
+	word-spacing: -2px;
+	letter-spacing: -0.1pt;
+}
+
+.height-card {
+	height: 370px;
+}
+
+
+.position-more {
+	margin-top: -30px;
 }
