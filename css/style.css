@@ -23,8 +23,8 @@ body {
 	margin-bottom: 20px !important;
 }
 
-.card-bio {
-	height: 500px;
+.background-bio {
+	height: 680px;
 	background-color: #EEEEF0;
 
 }
@@ -96,15 +96,24 @@ h3 {
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-top: -15px;
-	word-spacing: -2px;
+	word-spacing: -1px;
 	letter-spacing: -0.1pt;
 }
 
 .height-card {
-	height: 370px;
+	height: 600px;
 }
 
 
 .position-more {
 	margin-top: -30px;
+}
+
+
+#picture-antonin {
+	height: 150px; 
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	margin-top: -7px;
+	margin-bottom: 10px;
 }
