@@ -6,9 +6,9 @@
 
  visibility: hidden;
  opacity: 0;
- -webkit-transition: opacity .8s 0s, visibility 0s .3s;
- -moz-transition: opacity .8s 0s, visibility 0s .3s;
- transition: opacity .8s 0s, visibility 0s .3s;
+ -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+ -moz-transition: opacity .3s 0s, visibility 0s .3s;
+ transition: opacity .3s 0s, visibility 0s .3s;
 }
 
 
@@ -24,7 +24,7 @@
 }
 .cd-top.cd-fade-out {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: 0.7;
+  opacity: 1;
 }
 .no-touch .cd-top:hover {
   opacity: 1;
