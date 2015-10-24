@@ -22,7 +22,7 @@ Licensed under the MIT license
     //define default parameters
         var defaults = {
             height: '3px',
-            color: '#757575',
+            color: '#9E9E9E',
             
 
             success: function() {}
