@@ -1,12 +1,7 @@
-
-
-
-
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: red;
 }
-
 
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
@@ -246,35 +241,4 @@ h2 {color: #9E9E9E;}
 }
 
 
-.cd-top {
-	position: fixed;
-	right: 10px;
-	bottom: 10px;
-	z-index: 10;
-
- visibility: hidden;
- opacity: 0;
- -webkit-transition: opacity .8s 0s, visibility 0s .3s;
- -moz-transition: opacity .8s 0s, visibility 0s .3s;
- transition: opacity .8s 0s, visibility 0s .3s;
-}
-
-
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity .8s 0s, visibility 0s 0s;
-  -moz-transition: opacity .8s 0s, visibility 0s 0s;
-  transition: opacity .8s 0s, visibility 0s 0s;
-}
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: 0.7;
-}
-.no-touch .cd-top:hover {
-  opacity: 1;
-}
 
