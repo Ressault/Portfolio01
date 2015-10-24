@@ -98,6 +98,7 @@ if it's not present, don't show loader */
 
 .padded-line {
 	margin-top: 24px;
+	margin-bottom: 0px;
 }
 
 .padded {
@@ -134,7 +135,7 @@ if it's not present, don't show loader */
 	height: 150px; 
 	background-image: url(../images/background.jpg);
 	background-size: cover;
-	margin-top: -13px;
+	margin-top: 7px;
 	margin-bottom: 7px;
 }
 
@@ -178,8 +179,36 @@ h2 {color: #9E9E9E;}
 
 
 
+  .labelisation {
+  	float: left;
+	margin-top: 26px;
+	margin-left: 5px;
+	
+}
+
+.logiciel {float: left;}
+
+
+.comp-logiciels {position: absolute; margin-top: -50px;}
+
 .shadow-z-2-hover {
   box-shadow:
     0 8px 14px 0 rgba(0, 0, 0, 0.2),
     0 6px 17px 0 rgba(0, 0, 0, 0.19);
+}
+
+.padded-line2 {
+	
+	margin-top: -8px;
+
+}
+
+.barre {
+	margin-top: 35px;
+}
+
+.comp-logiciels2 {
+	position: absolute;
+	margin-top: 50px;
+	
 }
