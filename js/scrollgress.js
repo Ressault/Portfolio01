@@ -21,7 +21,7 @@ Licensed under the MIT license
 
     //define default parameters
         var defaults = {
-            height: '3px',
+            height: '2px',
             color: '#9E9E9E',
             
 
@@ -61,7 +61,7 @@ Licensed under the MIT license
         
         bottom: '0px',
         left: '0px',
-        background: '#212121',
+        background: 'black',
         zindex: '500',
         width: '100%',
         height: s.height
