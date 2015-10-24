@@ -22,8 +22,8 @@ Licensed under the MIT license
     //define default parameters
         var defaults = {
             height: '3px',
-            color: 'white',
-            zindex: '500',
+            color: '#757575',
+            
 
             success: function() {}
         }
@@ -58,10 +58,10 @@ Licensed under the MIT license
       $('body').prepend(progressBar);
       
       $('.scrollgress').css({
-        position: 'fixed',
-        top: '49px',
+        
+        bottom: '0px',
         left: '0px',
-        background: '#009688',
+        background: '#212121',
         zindex: '500',
         width: '100%',
         height: s.height

@@ -241,8 +241,10 @@ h2 {color: #9E9E9E;}
 }
 
 .scrollgress {
-	z-index: 500;	
-	padding-bottom: 4px;
+	position: fixed;
+	z-index: 500;
+	background: '#009688';	
+	
 }
 
 
