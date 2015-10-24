@@ -246,4 +246,13 @@ h2 {color: #9E9E9E;}
 }
 
 
+a.top {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 500;
+	
+	
+	
 
+}

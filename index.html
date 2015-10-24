@@ -27,6 +27,9 @@
   <body>
 
   <div class="se-pre-con"></div>
+  <!-- Create an anchor tag -->
+
+
 
 
 <nav class="navbar navbar-default navbar-fixed-top shadow-z-3">
@@ -306,6 +309,8 @@
                     </div>
             </div>
 
+
+<a class="top btn btn-primary btn-fab btn-raised " href="#HEADER"><i class="mdi-editor-vertical-align-top"></i></a>
 </div>
 
 
@@ -329,9 +334,16 @@
       });    
     </script> 
 
+    <script type="text/javascript">
+      $('a.top').click(function (e) {
+      e.preventDefault();
+      $(document.body).animate({scrollTop: 0}, 800);
+      });
+    </script>
+
         <script src="js/material.min.js"></script>
         <script>
-            $(document).rDeady(function() {
+            $(document).ready(function() {
                 // This command is used to initialize some elements and make them work properly
                 $.material.init();
             });
