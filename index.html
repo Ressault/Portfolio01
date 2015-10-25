@@ -13,6 +13,14 @@
 
 
 
+    <!-- load cubeportfolio css file -->
+    <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.css">
+     
+    <!-- load latest jquery from google resources-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+     
+    <!-- load cubeportfolio jQuery plugin -->
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -26,7 +34,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/backtop.css">
     <link rel="stylesheet" href="css/dragend.css">
-    <link rel="stylesheet" type="text/css" href="css/cubeportfolio/cubeportfolio.css">
+    
 
  
 
@@ -304,108 +312,44 @@
       <div id="demo">
         <ul>
           <li class="first dragend-page">
-            <div id="js-filters-awesome-work" class="cbp-l-filters-work">
-                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
-                    SHOW ALL
-                </div>
-                <div data-filter=".design3d" class="cbp-filter-item">
-                    Design 3D <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".web-design" class="cbp-filter-item">
-                    WEB DESIGN <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".graphic" class="cbp-filter-item">
-                    GRAPHIC <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".logos" class="cbp-filter-item">
-                    LOGO <div class="cbp-filter-counter"></div>
-                </div>
+           
+            <div id="filters-container" class="cbp-l-filters-underline">
+                <!-- '*' means shows all item elements -->
+                <div data-filter="*" class="cbp-filter-item cbp-filter-item-active ">Tous</div>               
+                <div data-filter=".produit" class="cbp-filter-item">Produits</div>
+                <div data-filter=".interieur" class="cbp-filter-item">Arch Viz interieur</div>
+                <div data-filter=".exterieur" class="cbp-filter-item">Arch Viz exterieur</div>
+
+            </div>
             
 
-            <div id="js-grid-awesome-work" class="cbp cbp-l-grid-work">
-                <div class="cbp-item design3d">
-                    <a href="ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="images/background1.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                    </a>
-                    <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Château Beaujardin</a>
-                    <div class="cbp-l-grid-work-desc">Design 3D</div>
-                </div>
-</div>
-
-                <div class="cbp-item web-design logos">
-                    <a href="ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="http://scriptpie.com/cubeportfolio/img/?i=480x250/d06583" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                    </a>
-                    <a href="ajax-awesome-work/project2.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">World Clock Widget</a>
-                    <div class="cbp-l-grid-work-desc">Logo / Web Design</div>
+            <div id="grid-container" class="cbp cbp-l-grid-work">
+                <div class="cbp-item exterieur">
+                   <a href="ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                       <div class="cbp-caption-defaultWrap">
+                           <img src="http://scriptpie.com/cubeportfolio/img/?i=480x250/4f4e75" alt="">
+                       </div>
+                       <div class="cbp-caption-activeWrap"></div>
+                   </a>
+                   <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Château de Beauajrdin</a>
+                   <div class="cbp-l-grid-work-desc">Arch Viz ext / 3D</div>
                 </div>
 
 
-                <div class="cbp-item graphic logos">
-                    <a href="ajax-awesome-work/project3.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="http://scriptpie.com/cubeportfolio/img/?i=480x250/d2949f" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                    </a>
-                    <a href="ajax-awesome-work/project3.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">To-Do Dashboard</a>
-                    <div class="cbp-l-grid-work-desc">Graphic / Logo</div>
+                <div class="cbp-item interieur">
+                   <a href="ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                       <div class="cbp-caption-defaultWrap">
+                           <img src="http://scriptpie.com/cubeportfolio/img/?i=480x250/4f4e75" alt="">
+                       </div>
+                       <div class="cbp-caption-activeWrap"></div>
+                   </a>
+                   <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Chambre</a>
+                   <div class="cbp-l-grid-work-desc">Arch Viz int / 3D</div>
                 </div>
 
 
-                <div class="cbp-item web-design graphic">
-                    <a href="ajax-awesome-work/project4.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="http://scriptpie.com/cubeportfolio/img/?i=480x250/53acad" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                    </a>
-                    <a href="ajax-awesome-work/project4.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Events and More</a>
-                    <div class="cbp-l-grid-work-desc">Web Design / Graphic</div>
-                </div>
+                
 
-
-                <div class="cbp-item identity web-design">
-                    <a href="ajax-awesome-work/project5.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="http://scriptpie.com/cubeportfolio/img/?i=480x250/55dbc9" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                    </a>
-                    <a href="ajax-awesome-work/project5.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">WhereTO App</a>
-                    <div class="cbp-l-grid-work-desc">Web Design / Identity</div>
-                </div>
-
-
-                <div class="cbp-item identity web-design">
-                    <a href="ajax-awesome-work/project6.html" class="cbp-caption cbp-singlePage" rel="nofollow">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="http://scriptpie.com/cubeportfolio/img/?i=480x250/4d1f59" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                    </a>
-                    <a href="ajax-awesome-work/project6.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Ski * Buddy</a>
-                    <div class="cbp-l-grid-work-desc">Identity / Web Design</div>
-                </div>
-            </div>
-
-
-
-
-
-            <div id="js-loadMore-awesome-work" class="cbp-l-loadMore-button">
-                <a href="ajax-awesome-work/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
-                    <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
-                    <span class="cbp-l-loadMore-loadingText">LOADING...</span>
-                    <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
-                </a>
-            </div>
           </li>
           
       
@@ -453,12 +397,11 @@
 <!-- BACk TO TOP -->
 <a class="cd-top btn btn-primary btn-fab btn-raised " href="#HEADER"><i class="mdi-editor-vertical-align-top"></i></a>
 
+
 </div>
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/jquery.cubeportfolio.js"></script>
-<script type="text/javascript" src="js/cubeportfolio/main.js"></script>
+
 <script type="text/javascript" src="js/loader.js"></script>  
 
 
@@ -534,9 +477,47 @@
             })();
         </script>
 
-        
-  
+          
+<script type="text/javascript">
+  jQuery(document).ready( function() {
+     jQuery('#grid-container').cubeportfolio({
+        filters: '#filters-container',
+        loadMore: '#js-loadMore-awesome-work',
+        loadMoreAction: 'click',
+        layoutMode: 'grid',
+        defaultFilter: '*',
+        animationType: 'scaleSides',
+        gapHorizontal: 30,
+        gapVertical: 30,
+        caption: 'zoom',
+        displayType: 'lazyLoading',
+        displayTypeSpeed: 400,
 
+        // singlePage popup
+        singlePageDelegate: '.cbp-singlePage',
+        singlePageDeeplinking: true,
+        singlePageStickyNavigation: true,
+        singlePageCounter: '<div class="cbp-popup-singlePage-counter">{{current}} of {{total}}</div>',
+        singlePageCallback: function(url, element) {
+            // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+            var t = this;
+
+            $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'html',
+                    timeout: 10000
+                })
+                .done(function(result) {
+                    t.updateSinglePage(result);
+                })
+                .fail(function() {
+                    t.updateSinglePage('AJAX Error! Please refresh the page!');
+                });
+               } 
+     });
+  });
+</script>
 
 
   </body>

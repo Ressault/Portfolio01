@@ -1006,13 +1006,13 @@
 
 @media only screen and (max-width: 600px) {
   .cbp-l-filters-list .cbp-filter-item {
-    margin-right: 5px;
+    margin-right: 0px;
     border-radius: 6px;
     border-right-width: 1px; } }
 
 .cbp-l-filters-work {
   /* @editable properties */
-  margin-bottom: 30px;
+  
   text-align: center; }
 
 .cbp-l-filters-work .cbp-filter-item {
@@ -1021,9 +1021,11 @@
   color: #888;
   cursor: pointer;
   font: 600 11px/37px "Open Sans", sans-serif;
-  margin: 0 5px 10px 0;
+  margin-bottom: 10px;
+  margin-top: 15px;
   overflow: visible;
-  padding: 0 16px;
+  padding-left: 5px;
+  padding-right: 5px;
   position: relative;
   display: inline-block;
   text-transform: uppercase;
@@ -1032,14 +1034,15 @@
 
 .cbp-l-filters-work .cbp-filter-item:hover {
   /* @editable properties */
-  color: #fff;
-  background: #607D8B; }
+  color: #616161;
+   }
 
 .cbp-l-filters-work .cbp-filter-item.cbp-filter-item-active {
   /* @editable properties */
-  background: #607D8B;
-  color: #fff;
-  cursor: default; }
+  
+  color: #616161;
+  cursor: default;
+  text-decoration: underline;  }
 
 .cbp-l-filters-work .cbp-filter-counter {
   /* @editable properties */
@@ -1155,15 +1158,19 @@
   margin-right: 15px; }
 
 .cbp-l-filters-underline {
-  margin-bottom: 30px; }
+  margin-bottom: 1px;text-align: center;
+  margin-top: 5px; }
+
   .cbp-l-filters-underline .cbp-filter-item {
     border-bottom: 3px solid transparent;
     cursor: pointer;
     font: 600 14px/21px "Open Sans", sans-serif;
-    padding: 8px 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
     position: relative;
     overflow: visible;
-    margin: 0 20px 10px 0;
+    margin-right: 5px;
     display: inline-block;
     color: #787878;
     -webkit-transition: all .2s ease-in-out;
@@ -3763,3 +3770,8 @@
   text-align: center;
   width: 100%;
   font: 13px "Open Sans", sans-serif; }
+
+  #marge-cont {
+    margin-right: 13px;
+    margin-left: 13px;
+  }
