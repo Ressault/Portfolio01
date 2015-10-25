@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700%7CRoboto:400,500,700%7CRoboto+Condensed%7CLato:400,700" rel="stylesheet" type="text/css">
     <link href="css/roboto.min.css" rel="stylesheet">
     <link href="css/material.css" rel="stylesheet">
     <link href="css/ripples.min.css" rel="stylesheet">
@@ -22,6 +23,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/backtop.css">
     <link rel="stylesheet" href="css/dragend.css">
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio/cubeportfolio.css">
+
 
   </head>
 
@@ -281,9 +284,9 @@
   <!--NAVIGATION PORTFOLIO-->
   <div id="navbar-portfolio">
    <ul class="list-inline nav01 text-center">
-      <li data-page="1" class="active  choix">DESIGN 3D</li>
+      <li data-page="1" class="prev deactivated choix">DESIGN 3D</li>
       <li class="seperate"><i class="fa fa-arrows-h"></i></li>
-      <li data-page="2" class="choix">GRAPHISME</li>
+      <li data-page="2" class="prev deactivated choix">GRAPHISME</li>
     </ul>
   </div>
 
@@ -369,29 +372,31 @@
       }, 'slow');
       return false;
       });    
-    </script>    
-        <script src="js/material.min.js"></script>
-        <script src="js/back-top.js"></script> 
-        <script>
+
+
+    </script>
+
+    <script src="js/material.min.js"></script>
+    <script src="js/back-top.js"></script> 
+    <script>
             $(document).ready(function() {
                 // This command is used to initialize some elements and make them work properly
                 $.material.init();
             });
-        </script>
+    </script>
 
-     <!-- progress-barre <script src="js/scrollgress.js"></script> -->
-        <script> $('body').scrollgress();</script>
 
-        <script type="text/javascript" src="js/dragend.js"></script>
+    <script type="text/javascript" src="js/dragend.js"></script>
 
         <script>
 
-            $(function() {
+
+            $(function(e) {
               $("#demo").dragend({
-                afterInitialize: function() {
+                afterInitialize: function(e) {
                   this.container.style.visibility = "visible";
                 },
-                onSwipeEnd: function() {
+                onSwipeEnd: function(e) {
                   var first = this.pages[0],
                       last = this.pages[this.pages.length - 1];         
                   $(".nav01 li").removeClass("active");         
@@ -399,14 +404,17 @@
                 }
               });
 
-              $(".nav01").click(function() {
-                var page = $(event.target).data("page");
+              $(".nav01").click(function(e) {
+
+                var page = $(e.target).data("page");
+
+
 
                 $("#demo").dragend({
                   scrollToPage: page
                 });
 
-                $(event.target).addClass("active");
+                $(e.target).addClass("active");
 
               })
 
