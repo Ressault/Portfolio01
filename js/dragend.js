@@ -96,7 +96,7 @@
         page               : 1,
         borderBetweenPages : 0,
         duration           : 300,
-        preventDrag        : false,
+        preventDrag        : true,
         disableScroll      : false
       },
 
