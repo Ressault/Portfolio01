@@ -552,21 +552,32 @@
             })();
         </script>
 
-          
+<!-- MISE EN PAGE PORTFOLIO -->          
 <script type="text/javascript">
   jQuery(document).ready( function() {
      jQuery('#grid-container').cubeportfolio({
         filters: '#filters-container',
-        loadMore: '#js-loadMore-awesome-work',
-        loadMoreAction: 'click',
         layoutMode: 'grid',
         defaultFilter: '*',
         animationType: 'scaleSides',
         gapHorizontal: 8,
-        gapVertical: 30,
+        gapVertical: 8,
         caption: 'zoom',
         displayType: 'lazyLoading',
         displayTypeSpeed: 400,
+        mediaQueries: [{
+            width: 1500,
+            cols: 4
+        }, {
+            width: 1100,
+            cols: 3
+        }, {
+            width: 480,
+            cols: 2
+        }, {
+            width: 320,
+            cols: 1
+        }],
 
         // singlePage popup
         singlePageDelegate: '.cbp-singlePage',
@@ -594,8 +605,6 @@
 
   jQuery('#grid-container2').cubeportfolio({
      filters: '#filters-container',
-     loadMore: '#js-loadMore-awesome-work',
-     loadMoreAction: 'click',
      layoutMode: 'grid',
      defaultFilter: '*',
      animationType: 'scaleSides',
@@ -604,6 +613,19 @@
      caption: 'zoom',
      displayType: 'lazyLoading',
      displayTypeSpeed: 400,
+     mediaQueries: [{
+         width: 1500,
+         cols: 4
+     }, {
+         width: 1100,
+         cols: 3
+     }, {
+         width: 480,
+         cols: 2
+     }, {
+         width: 320,
+         cols: 1
+     }],
 
      // singlePage popup
      singlePageDelegate: '.cbp-singlePage',
