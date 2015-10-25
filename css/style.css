@@ -237,7 +237,7 @@ h2 {color: #9E9E9E;}
 
 #enssemble-comp {
 	background-color: #E0E0E0;
-	padding-bottom: 50px;
+	padding-bottom: 65px;
 }
 
 .scrollgress {
@@ -249,3 +249,57 @@ h2 {color: #9E9E9E;}
 }
 
 
+.button {
+	height: 20px;
+	background-color: yellow;
+}
+.button2 {
+	height: 20px;
+	background-color: red;
+}
+
+
+#cover-portfolio {
+	background-image: url(../images/background.jpg);
+	height: 140px;
+	margin-top: -20px;
+}
+
+#cover-portfolio h1 {  
+	color: white;
+	padding-top: 16px;
+
+}
+
+#cover-portfolio p {  
+color: white;
+margin-top: -7px;
+	
+}
+
+#navbar-portfolio {
+	height: 40px;
+	background-color: #283593;
+}
+
+.nav01 li {
+	
+	margin-top: 8px;
+
+}
+
+.choix {
+	color: white !important;
+	font-size: 17px;
+	border: 1px solid rgba( 255, 255, 255, 0.1);
+	border-radius: 3px; 
+	width: 41%;
+}
+
+.seperate {
+	color: rgba( 255, 255, 255, 0.2);
+}
+
+.text-portfolio {
+	padding-top: 7px;
+}
