@@ -9,6 +9,7 @@
       top: 0;
       left: 0;
       width: 100%;
+      height: 100%;
       
       visibility: hidden;
       background: #457;
@@ -29,18 +30,5 @@
    
     
 
-    #demo p {
-      max-width: 90%;
-      margin: 0 auto;
-      padding: 0 30px;
-      margin-bottom: 30px;
-    }
-
-    #demo p:first-child {
-      margin-top: 30px;
-    }
-
-    #demo p:last-child {
-      margin-bottom: 200px;
-    }
+   
        

@@ -20,7 +20,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
      
     <!-- load cubeportfolio jQuery plugin -->
-    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.js"></script>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -327,12 +327,77 @@
                 <div class="cbp-item exterieur">
                    <a href="ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
                        <div class="cbp-caption-defaultWrap">
-                           <img src="images/background1.jpg" alt="">
+                           <img src="images/3d/chateau_cover.jpg" alt="">
                        </div>
                        <div class="cbp-caption-activeWrap"></div>
                    </a>
                    <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Château de Beauajrdin</a>
-                   <div class="cbp-l-grid-work-desc">Arch Viz ext / 3D</div>
+                   <div class="cbp-l-grid-work-desc">Arch Viz exterieur / 3D</div>
+                </div>
+
+
+                <div class="cbp-item exterieur">
+                   <a href="ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                       <div class="cbp-caption-defaultWrap">
+                           <img src="images/3d/nature_cover.jpg" alt="">
+                       </div>
+                       <div class="cbp-caption-activeWrap"></div>
+                   </a>
+                   <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">House in the countryside</a>
+                   <div class="cbp-l-grid-work-desc">Arch Viz exterieur / 3D</div>
+                </div>
+
+
+                <div class="cbp-item produit">
+                   <a href="ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                       <div class="cbp-caption-defaultWrap">
+                           <img src="images/3d/bottle_cover.jpg" alt="">
+                       </div>
+                       <div class="cbp-caption-activeWrap"></div>
+                   </a>
+                   <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">whiskey bottle</a>
+                   <div class="cbp-l-grid-work-desc">Design produit / 3D</div>
+                </div>
+
+             
+              <div class="cbp-item ">
+                <div id="js-loadMore-awesome-work" class="cbp-l-loadMore-button">
+                    <a href="ajax-awesome-work/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
+                        <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
+                        <span class="cbp-l-loadMore-loadingText">LOADING...</span>
+                        <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+                    </a>
+                </div>
+                </div>
+
+<p>dddd</p>
+                
+
+          </li>
+          
+      
+          <li class="last dragend-page">
+            
+            <div id="filters-container" class="cbp-l-filters-underline">
+                <!-- '*' means shows all item elements -->
+                <div data-filter="*" class="cbp-filter-item cbp-filter-item-active ">Tous</div>               
+                <div data-filter=".print" class="cbp-filter-item">Print</div>
+                <div data-filter=".illustration" class="cbp-filter-item">Illustration</div>
+                <div data-filter=".edition" class="cbp-filter-item">Edition</div>
+
+            </div>
+            
+
+            <div id="grid-container2" class="cbp cbp-l-grid-work">
+                <div class="cbp-item print">
+                   <a href="ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
+                       <div class="cbp-caption-defaultWrap">
+                           <img src="images/background1.jpg" alt="">
+                       </div>
+                       <div class="cbp-caption-activeWrap"></div>
+                   </a>
+                   <a href="ajax-awesome-work/project1.html" class="cbp-l-grid-work-title cbp-singlePage" rel="nofollow">Nature en fête</a>
+                   <div class="cbp-l-grid-work-desc">Dépliant / Print</div>
                 </div>
 
 
@@ -347,18 +412,6 @@
                    <div class="cbp-l-grid-work-desc">Arch Viz int / 3D</div>
                 </div>
 
-
-                
-
-          </li>
-          
-      
-          <li class="last dragend-page">
-            <p>PAGE02 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nihil fugit <a href="http://google.com">cupiditate</a> aut sit temporibus sint repellat et. Neque, harum, vel aut quidem tempore odit amet qui officiis ipsa voluptatem.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, excepturi, mollitia sapiente sequi adipisci fuga reiciendis qui provident aut alias iste nam at cumque inventore <a href="http://google.com">dignissimos</a> quibusdam vero pariatur delectus!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, excepturi, mollitia sapiente sequi adipisci fuga reiciendis qui provident aut alias iste nam at cumque inventore dignissimos quibusdam vero pariatur delectus!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, excepturi, mollitia sapiente sequi adipisci fuga reiciendis qui provident aut alias iste nam at cumque inventore dignissimos quibusdam vero pariatur delectus!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, excepturi, mollitia sapiente sequi adipisci fuga reiciendis qui provident aut alias iste nam at cumque inventore dignissimos quibusdam vero pariatur delectus!</p>
           </li>
         </ul>
       </div>
@@ -487,7 +540,7 @@
         layoutMode: 'grid',
         defaultFilter: '*',
         animationType: 'scaleSides',
-        gapHorizontal: 30,
+        gapHorizontal: 8,
         gapVertical: 30,
         caption: 'zoom',
         displayType: 'lazyLoading',
@@ -516,6 +569,43 @@
                 });
                } 
      });
+
+  jQuery('#grid-container2').cubeportfolio({
+     filters: '#filters-container',
+     loadMore: '#js-loadMore-awesome-work',
+     loadMoreAction: 'click',
+     layoutMode: 'grid',
+     defaultFilter: '*',
+     animationType: 'scaleSides',
+     gapHorizontal: 30,
+     gapVertical: 30,
+     caption: 'zoom',
+     displayType: 'lazyLoading',
+     displayTypeSpeed: 400,
+
+     // singlePage popup
+     singlePageDelegate: '.cbp-singlePage',
+     singlePageDeeplinking: true,
+     singlePageStickyNavigation: true,
+     singlePageCounter: '<div class="cbp-popup-singlePage-counter">{{current}} of {{total}}</div>',
+     singlePageCallback: function(url, element) {
+         // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+         var t = this;
+
+         $.ajax({
+                 url: url,
+                 type: 'GET',
+                 dataType: 'html',
+                 timeout: 10000
+             })
+             .done(function(result) {
+                 t.updateSinglePage(result);
+             })
+             .fail(function() {
+                 t.updateSinglePage('AJAX Error! Please refresh the page!');
+             });
+            } 
+  });
   });
 </script>
 
