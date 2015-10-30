@@ -43,10 +43,10 @@
       height: 985px;}}
 
  
- @media only screen and (min-width : 651px){
+ @media only all and (min-width : 651px){
     .card-header {
        
-      height: 450px !important;}}
+      height: 470px !important;}}
 
 
  
