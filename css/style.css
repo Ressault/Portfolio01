@@ -1,9 +1,13 @@
-   
-
+@media (min-width: 768px) {
+  .container {
+    width: 100% !important;
+  }
+}
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: red;
+
 }
 
 /* Paste this css to your style sheet file or under head tag */
@@ -45,7 +49,7 @@ if it's not present, don't show loader */
 
 .background-bio {
 	padding-bottom: 65px;
-	background: url(../images/back01.png) top no-repeat #283593;	
+	background: url(../images/back01.png) top repeat-x #283593;	
 
 }
 

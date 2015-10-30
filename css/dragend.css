@@ -26,6 +26,21 @@
        
       height: 700px;}}
 
+    @media only screen and (min-width : 768px){
+    #demo {
+       
+      height: 1000px;}}
+
+
+    @media only screen and (min-width : 600px){
+    #demo {
+       
+      height: 810px;}}
+
+    @media only screen and (min-width : 800px){
+    #demo {
+       
+      height: 985px;}}
 
  
 
