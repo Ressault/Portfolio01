@@ -4,11 +4,6 @@
   }
 }
 
- @media (min-width : 651px){
-    .card-header {
-       
-      height: 470px !important;}}
-
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: red;
