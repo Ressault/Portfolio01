@@ -46,17 +46,27 @@
  @media only screen and (min-width : 590px){
     .card-header {
        
-      height: 500px !important;}}
+      height: 460px !important;}}
 
    @media only screen and (min-width : 590px){
     .card-header {
        
-     padding-top: 270px !important;}}
+     padding-top: 230px !important;}}
 
   @media only screen and (min-width : 590px){
     #picture-antonin {
        
-     height: 270px !important;}}
+     height: 290px !important;}}
+
+    @media only screen and (min-width : 590px){
+    #bio {
+       
+     height: 140px !important;}
+
+     .titre{
+      font-size: 27px !important;
+      }}
+
 
 
  

@@ -44,7 +44,8 @@ if it's not present, don't show loader */
 }
 
 #bio p {
-	margin-bottom: 20px !important;
+	margin-bottom: 18px !important;
+	height: 70px;
 }
 
 .background-bio {
