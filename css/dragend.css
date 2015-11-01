@@ -74,6 +74,12 @@
      font-size: 20px !important;}}
 
 
+    @media only screen and (min-width : 590px){
+    .modal-body {
+       
+     font-size: 19px !important;}}
+
+
 
  
 
