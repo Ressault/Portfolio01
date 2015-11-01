@@ -53,6 +53,11 @@
        
      padding-top: 270px !important;}}
 
+  @media only screen and (min-width : 590px){
+    #picture-antonin {
+       
+     height: 270px !important;}}
+
 
  
 
