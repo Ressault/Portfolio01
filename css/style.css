@@ -320,3 +320,65 @@ li.seperate  {
 .text-portfolio {
 	padding-top: 7px;
 }
+
+
+#enssemble-service {
+	background-color: #E0E0E0;
+	padding-bottom: 65px;
+}
+
+.img-service {
+	height: 180px;
+	background-image: url(../images/background1.jpg);
+	background-size: cover;
+
+}
+
+.img-service h1 {
+	color: white;
+	padding-top: 16px;
+}
+
+.img-service p {
+	color: white;
+	margin-top: -10px;
+	
+}
+
+
+.card-service {
+	
+	background-color: white;
+	border-radius: 2px;
+	padding: 10px;
+	margin-top: -110px;
+	height: 365px;
+	
+}
+
+.service {
+	background-color: #E0E0E0;
+}
+
+.perspective  {
+	font-size: 16px;
+}
+
+.img-persp {
+	margin-top: 10px;
+}
+
+.text-persp {
+	margin-top: 7px;
+}
+
+
+.card-service2 {
+	
+	background-color: white;
+	border-radius: 2px;
+	padding: 10px;
+	margin-top: 35px;
+	height: 365px;
+	
+}
