@@ -360,6 +360,11 @@ li.seperate  {
 	background-color: #283593;
 }
 
+.service2 {
+	background-color: #283593;
+	margin-top: 130px !important;
+}
+
 .perspective  {
 	font-size: 16px;
 }
@@ -390,6 +395,16 @@ li.seperate  {
 .img-service2 {
 	height: 170px;
 	background-image: url(../images/wire1.jpg);
+	background-size: cover;
+	z-index: 10;
+	width: 100%;
+	margin-top: -110px;
+
+}
+
+.img-service3 {
+	height: 170px;
+	background-image: url(../images/wire2.jpg);
 	background-size: cover;
 	z-index: 10;
 	width: 100%;
