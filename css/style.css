@@ -394,6 +394,8 @@ li.seperate  {
 
 .img-service2 {
 	height: 170px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	background-image: url(../images/wire1.jpg);
 	background-size: cover;
 	z-index: 10;
@@ -404,6 +406,8 @@ li.seperate  {
 
 .img-service3 {
 	height: 170px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	background-image: url(../images/wire2.jpg);
 	background-size: cover;
 	z-index: 10;
