@@ -352,7 +352,7 @@ li.seperate  {
 	border-radius: 2px;
 	padding: 10px;
 	margin-top: -110px;
-	height: 395px;
+	height: 415px;
 	
 }
 
@@ -365,7 +365,7 @@ li.seperate  {
 }
 
 .img-persp {
-	margin-top: 50px;
+	margin-top: 65px;
 }
 
 .text-persp {
@@ -384,7 +384,7 @@ li.seperate  {
 }
 
 .img-service2 {
-	height: 150px;
+	height: 170px;
 	background-image: url(../images/wire1.jpg);
 	background-size: cover;
 	
