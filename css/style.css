@@ -52,7 +52,7 @@ if it's not present, don't show loader */
 
 .background-bio {
 	padding-bottom: 65px;
-	background: url(../images/back01.png) top repeat-x #283593;	
+	background: url(../images/back01.png) top repeat-x #009688;	
 
 }
 
@@ -146,7 +146,7 @@ if it's not present, don't show loader */
 
 .img-competence {
 	height: 180px;
-	background-image: url(../images/background1.jpg);
+	background-image: url(../images/background.jpg);
 	background-size: cover;
 
 }
@@ -325,7 +325,7 @@ li.seperate  {
 
 
 #enssemble-service {
-	background-color: #283593;
+	background-color: #009688;
 	padding-bottom: 65px;
 }
 
@@ -359,11 +359,11 @@ li.seperate  {
 }
 
 .service {
-	background-color: #283593;
+	background-color: #009688;
 }
 
 .service2 {
-	background-color: #283593;
+	background-color: #009688;
 	margin-top: 130px !important;
 }
 
@@ -424,7 +424,7 @@ li.seperate  {
 }
 
 .service2 {
-	background-color: #283593;
+	background-color: #009688;
 	margin-top: 150px;
 }
 
