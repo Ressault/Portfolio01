@@ -102,7 +102,7 @@ if it's not present, don't show loader */
 }
 
 .padded-line {
-	margin-top: 24px;
+	margin-top: 15px;
 	margin-bottom: 0px;
 }
 
@@ -112,8 +112,8 @@ if it's not present, don't show loader */
 
 #presentation h2  {
 	
-	margin-top: -51px;
-	padding-left: 73px;
+	margin-top: -38px;
+	padding-left: 56px;
 	
 }
 
@@ -189,15 +189,15 @@ if it's not present, don't show loader */
 
 .card-competence h2  {
 	
-	margin-top: -51px;
-	padding-left: 73px;
+	margin-top: -38px;
+	padding-left: 56px;
 	
 }
 
 .card-competence2 h2  {
 	
-	margin-top: -51px;
-	padding-left: 73px;
+	margin-top: -38px;
+	padding-left: 56px;
 	
 }
 
