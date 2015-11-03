@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: red;
+	background-color: #009688;
 
 }
 
@@ -66,7 +66,7 @@ if it's not present, don't show loader */
 
 .img-circle {
 	border-radius: 50%;
-	border: 13px solid red;
+	border: 13px solid #009688;
 
 }
 
@@ -444,12 +444,15 @@ li.seperate  {
     background-size: cover;
 }
 .ad1 {
-    background: url(../images/background1.jpg) no-repeat center center fixed; 
+    background: url(../images/header01.jpg) center ;
+    background-size: cover;  
 }
 .ad2 {
-    background: url(../images/background.jpg) no-repeat center center fixed; 
+    background: url(../images/header02.jpg) center ;
+    background-size: cover;  
 }
 .ad3 {
-    background: url(../images/wire1.jpg) no-repeat center center fixed; 
+    background: url(../images/header03.jpg) center ;
+    background-size: cover; 
 }
 
