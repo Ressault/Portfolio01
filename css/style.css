@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: #e8484a;
+	background-color: #e51c23;
 
 }
 
@@ -66,7 +66,7 @@ if it's not present, don't show loader */
 
 .img-circle {
 	border-radius: 50%;
-	border: 13px solid #e8484a;
+	border: 13px solid #e51c23;
 
 }
 
