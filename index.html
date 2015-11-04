@@ -1,3 +1,71 @@
+ <?php
+// NOTE: this page must be saved as a .php file.
+// And your server must support PHP 5.3+ PHP Mail().
+// Define variables and set to empty values
+$result = $name = $email = $phone = $message = $human = "";
+$errName = $errEmail = $errPhone = $errMessage = $errHuman = "";
+    if (isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+        
+         //valid address on your web server
+        $from = 'webmaster@yourdomain.com ';
+        //your email address where you wish to receive mail
+        $to = 'ressault.antonin@gmail.com'; 
+        $subject = 'MESSAGE FROM YOUR WEB SITE';
+        $headers = "From:$from\r\nReply-to:$email";
+        $body = "From: $name\n E-Mail: $email\n Phone: $phone\n Message: $message";
+// Check if name is entered
+if (empty($_POST["name"])) {
+$errName = "Please enter your name.";
+} else {
+    $name = test_input($_POST["name"]);
+}
+// Check if email is entered
+if (empty($_POST["email"])) {
+$errEmail = "Please enter your email address.";
+} else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is valid format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $errEmail = "Invalid email format.";
+    }
+}
+// Check if phone is entered although it is not required so we don't need error message
+if (empty($_POST["phone"])) {
+$phone = "";
+} else {
+    $phone = test_input($_POST["phone"]);
+}
+//Check if message is entered
+if (empty($_POST["message"])) {
+$errMessage = "Please enter your message.";
+} else {
+    $message = test_input($_POST["message"]);
+}
+
+// If there are no errors, send the email & output results to the form
+if (!$errName && !$errEmail && !$errPhone &&  !$errMessage && !$errHuman) {
+    if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success"><h2><span class="glyphicon glyphicon-ok"></span> Message sent!</h2><h3>Thank you for contacting us. Someone will be in touch with you soon.</h3></div>';
+    } else {
+        $result='<div class="alert alert-danger"><h2><span class="glyphicon glyphicon-warning-sign"></span> Sorry there was a form processing error.</h2> <h3>Please try again later.</h3></div>';
+       }
+    }
+}
+//sanitize data inputs   
+function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   $data = (filter_var($data, FILTER_SANITIZE_STRING));
+   return $data;
+}
+//end form processing script
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -563,42 +631,57 @@
       </h2>
 
       <hr class="padded-line">
+      <br>
 
 
-      <form class="form-horizontal" role="form" method="post" action="index.php">
-          <div class="form-group">
-              <label for="name" class="col-sm-2 control-label">Name</label>
-              <div class="col-sm-10">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                  <?php echo "<p class='text-danger'>$errName</p>";?>
-              </div>
-          </div>
-          <div class="form-group">
-              <label for="email" class="col-sm-2 control-label">Email</label>
-              <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                  <?php echo "<p class='text-danger'>$errEmail</p>";?>
-              </div>
-          </div>
-          <div class="form-group">
-              <label for="message" class="col-sm-2 control-label">Message</label>
-              <div class="col-sm-10">
-                  <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-                  <?php echo "<p class='text-danger'>$errMessage</p>";?>
-              </div>
-          </div>
-          
-          <div class="form-group">
-              <div class="col-sm-10 col-sm-offset-2">
-                  <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-              </div>
-          </div>
-          <div class="form-group">
-              <div class="col-sm-10 col-sm-offset-2">
-                  <?php echo $result; ?>    
-              </div>
-          </div>
-      </form> 
+      <!--begin HTML Form-->
+      <form class="form-horizontal" role="form" method="post" action=" ">
+      <!--when submit button is clicked, show results here-->
+      <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">
+      <?php echo $result;?>
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label for="name" class="col-sm-3 control-label"><span class="required">*</span> Name:</label>
+      <div class="col-sm-9">
+      <input type="text" class="form-control" id="name" name="name" placeholder="First & Last" value="<?php echo $name;?>">
+<span class="required small"><?php echo $errName;?></span> >
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label for="email" class="col-sm-3 control-label"><span class="required">*</span> Email: </label>
+      <div class="col-sm-9">
+      <input type="email" class="form-control" id="email" name="email" placeholder="you@domain.com" value="<?php echo $email;?>">
+      <span class="required small"><?php echo $errEmail;?></span>>
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label for="phone" class="col-sm-3 control-label">Phone: </label>
+      <div class="col-sm-9">
+      <input type="tel" class="form-control" id="phone" name="phone" placeholder="(123) 456-7890" value="<?php echo $phone;?>">
+<span class="required small"><?php echo $errPhone;?></span>>
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label for="message" class="col-sm-3 control-label"><span class="required">*</span> Message:</label>
+      <div class="col-sm-9">
+      <textarea class="form-control" row="4" name="message" placeholder="Tell us your story?"><<?php echo $message;?></textarea>
+      <span class="required small"><?php echo $errMessage;?></span>
+      </div>
+      </div>
+
+
+      <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      <button type="submit" id="submit" name="submit" class="btn-lg btn-primary btn-block">Envoyer</button>
+      </div>
+      </div>
+      <!--end Form--></form> 
   </div>            
 </div>
                             
