@@ -573,31 +573,31 @@
 
                       <div class="form-group">
                           <div class="col-md-12">
-                              <label for="txt_name" class="control-label">Name</label>
+                              <label for="txt_name" class="control-label">Nom & Prénom</label>
                           </div>
                           <div class="col-md-12">
-                              <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" value="<?php if($error) echo $name; ?>" />
-                              <span class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>
-                          </div>
-                      </div>
-
-                      <div class="form-group">
-                          <div class="col-md-12">
-                              <label for="txt_email" class="control-label">Email ID</label>
-                          </div>
-                          <div class="col-md-12">
-                              <input class="form-control" name="txt_email" placeholder="Your Email ID" type="text" value="<?php if($error) echo $fromemail; ?>" />
-                              <span class="text-danger"><?php if (isset($fromemail_error)) echo $fromemail_error; ?></span> 
+                              <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text"  />
+                              <span class="text-danger"></span>
                           </div>
                       </div>
 
                       <div class="form-group">
                           <div class="col-md-12">
-                              <label for="txt_subject" class="control-label">Subject</label>
+                              <label for="txt_email" class="control-label">Adresse email</label>
                           </div>
                           <div class="col-md-12">
-                              <input class="form-control" name="txt_subject" placeholder="Your Subject" type="text" value="<?php if($error) echo $subject; ?>" />
-                              <span class="text-danger"><?php if (isset($subject_error)) echo $subject_error; ?></span>
+                              <input class="form-control" name="txt_email" placeholder="Your Email ID" type="text" />
+                              <span class="text-danger"></span> 
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <div class="col-md-12">
+                              <label for="txt_subject" class="control-label">Sujet</label>
+                          </div>
+                          <div class="col-md-12">
+                              <input class="form-control" name="txt_subject" placeholder="Your Subject" type="text" />
+                              <span class="text-danger"></span>
                           </div>
                       </div>
 
@@ -606,8 +606,8 @@
                               <label for="txt_msg" class="control-label">Message</label>
                           </div>
                           <div class="col-md-12">
-                              <textarea class="form-control" name="txt_msg" rows="4" placeholder="Your Message"><?php if($error) echo $message; ?></textarea>
-                              <span class="text-danger"><?php if (isset($message_error)) echo $message_error; ?></span>
+                              <textarea class="form-control" name="txt_msg" rows="4" placeholder="Votre message"></textarea>
+                              <span class="text-danger"></span>
                           </div>
                       </div>
 

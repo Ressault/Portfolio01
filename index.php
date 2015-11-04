@@ -33,7 +33,7 @@
         if (!$error)
         {
             //send mail
-            $toemail = "me@mydomain.com";
+            $toemail = "contact@antoninressault.fr";
             $subject = "Enquiry from Visitor " . $name;
             $body = "Here goes your Message Details: \n\n Name: $name \n From: $fromemail \n Message: \n $message";
             $headers = "From: $fromemail\n";
