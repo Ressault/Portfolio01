@@ -45,4 +45,6 @@
                 $alertmsg = '<div class="alert alert-danger text-center">There is error in sending mail.  Please try again later.</div>';
         }
     }
+    header('Location: index.html#CONTACT');
+
 ?>
