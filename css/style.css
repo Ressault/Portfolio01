@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: #e51c23;
+	background-color: #273649;
 
 }
 
@@ -66,7 +66,7 @@ if it's not present, don't show loader */
 
 .img-circle {
 	border-radius: 50%;
-	border: 13px solid #e51c23;
+	border: 13px solid #273649;
 
 }
 
@@ -138,7 +138,7 @@ if it's not present, don't show loader */
 
 #picture-antonin {
 	height: 150px; 
-	background-image: url(../images/background.jpg);
+	background-image: url(../images/background01.jpg);
 	background-size: cover;
 	margin-top: 7px;
 	margin-bottom: 7px;
@@ -470,5 +470,22 @@ li.seperate  {
 
 #footer {
 	background-color: #d41a20;
-	height: 68px;
+	height: 20px;
+	-moz-box-shadow: 0px 8px 50px 0px black;
+-webkit-box-shadow: 0px 8px 50px 0px black;
+-o-box-shadow: 0px 8px 50px 0px black;
+box-shadow: 0px 8px 50px 0px black;
+}
+
+#footer01 {
+	background-color: #2e3e53;
+	height: 75px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
+}
+
+#footer01 ul {
+	padding-top: 20px;
+	
+
 }
