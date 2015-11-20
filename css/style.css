@@ -52,7 +52,7 @@ if it's not present, don't show loader */
 
 .background-bio {
 	padding-bottom: 65px;
-	background: url(../images/back01.png) top repeat-x #E0E0E0;	
+	background: url(../images/back01.png) top repeat-x #364a63;	
 
 }
 
@@ -325,7 +325,7 @@ li.seperate  {
 
 
 #enssemble-service {
-	background-color: #455A64;
+	background-color: #364a63;
 	padding-bottom: 65px;
 }
 
@@ -359,11 +359,11 @@ li.seperate  {
 }
 
 .service {
-	background-color: #455A64;
+	background-color: #364a63;
 }
 
 .service2 {
-	background-color: #455A64;
+	background-color: #364a63;
 	margin-top: 130px !important;
 }
 
@@ -424,7 +424,7 @@ li.seperate  {
 }
 
 .service2 {
-	background-color: #455A64;
+	background-color: #364a63;
 	margin-top: 150px;
 }
 
