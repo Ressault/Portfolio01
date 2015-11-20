@@ -469,7 +469,7 @@ li.seperate  {
 
 
 #footer {
-	background-color: #d41a20;
+	background-color: #f44236;
 	height: 20px;
 	-moz-box-shadow: 0px 8px 50px 0px black;
 -webkit-box-shadow: 0px 8px 50px 0px black;
@@ -491,9 +491,11 @@ box-shadow: 0px 8px 50px 0px black;
 }
 
 #souligne {
-	background-color: #e51c23;
+	background-color: #f44236;
 	height: 20px;
 	width: 100%;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
 }
 
 .jumbotron {
